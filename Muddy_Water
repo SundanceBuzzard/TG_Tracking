@@ -1,4 +1,35 @@
-//AKA: Static Kitten, Zagros, and Mango Sandstorm
+//AKA: Earth Vetala, MERCURY, Seedworm, TA450, Static Kitten, Zagros, and Mango Sandstorm
+//Targets: Israel, Turkey, Afghanistan, Pakistan, the United Arab
+Emirates, Iraq, the United Kingdom, Azerbaijan, the United States, Egypt, and
+Nigeria
+
+//Geo-Political Triggers: The Swords of Iron War (war in Gaza, beginning Oct 2023)
+
+//Notable Events: Unmasking of group operators at CyberTech Tel Aviv 2023 conference (delivered by Head of the Israel National Cyber Directorate (INCD))
+
+//TTPs: Spear Phishing, VPN Infra vulns, Exploitation of RMM tools, clouds storage, powershell code, use of modified versions of publicly available tools
+
+//Phishing
+-> Usually targeted but has conducted broad phishing in the past 
+-> Impersonates Microsoft 
+-> Creates free accounts for phishing purposes 
+-> Uses compromised email accounts 
+-> Creats accounts to purposefully look like legit orgs
+-> Impersonate trusted identities
+-> Crafts specific messaging
+
+//File Sharing / Cloud services
+-> OneDrive, Egnyte - used to download RMM
+
+//RMM Tools
+-> 
+
+//Powershell
+//Git-Hub Available tools
+
+//Malware
+-> BugSleep - May2024
 
 //References
+https://attack.mitre.org/groups/G0069/
 https://www.gov.il/BlobFolder/reports/maddy_water_2024/en/ALERT_CERT_IL_W_1858.pdf
