@@ -7,7 +7,7 @@ Nigeria
 
 //Notable Events: Unmasking of group operators at CyberTech Tel Aviv 2023 conference (delivered by Head of the Israel National Cyber Directorate (INCD))
 
-//TTPs: Spear Phishing, VPN Infra vulns, Exploitation of RMM tools, clouds storage, powershell code, use of modified versions of publicly available tools
+//TTPs: Spear Phishing, COM Hijacking, DLL Sideloading, VPN Infra vulns, Exploitation of RMM tools, clouds storage, powershell code, use of modified versions of publicly available tools
 
 //Phishing
 -> Usually targeted but has conducted broad phishing in the past 
@@ -27,8 +27,34 @@ Nigeria
 //Powershell
 //Git-Hub Available tools
 
+//Use of Legitimate Platforms
+-> Rentry.co (content sharing)
+
+
+
 //Malware
--> BugSleep - May2024
+-> BugSleep Backdoor - May2024 - PE64 / C++
+  -> Shellcode injection
+  -> Scheduled tasks 
+  -> C2 comms 
+  -> Hardcoded IP 
+  -> Transmits victim host and user info
+
+-> Blackout Backdoor / RAT - PE64 / C++
+  -> C2 Comms via HTTP - Upload / Download of files
+
+-> AnchorRat
+  -> Downloading DLLs via COM Hijacking
+  -> Modifies registry key "HKCU\Software\Classes\CLSID\{0358B920-0AC7-461F-98F4-58E32CD89148}\InProcServer32" to establish persistance 
+  -> AnchorRAT uses service called "OneDriveStandaloneUpdaterService" to download RAT's executable
+
+-> CannonRat
+  -> Supported commands: Sleep, pwd, cd, upload, download, runexe, rundll
+  -> Modifies registry key "HKCU\Software\Classes\CLSID\{10D62541-90D0-42FE 848C0DBC1AC42EDA}\InProcServer32"
+
+-> Neshta (First Identified 2003)
+  -> Previously linked to BlackPOS malware
+  -> Injects malicious code into files
 
 //References
 https://attack.mitre.org/groups/G0069/
